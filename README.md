@@ -12,6 +12,7 @@ AI Arena is an **AI-powered comparison platform** where users can compare respon
 * 💬 **Chat Interface** – Clean and simple chat UI
 * ⏳ **Real-time Loading State** – AI typing experience
 * ❌ **Error Handling** – Proper feedback on API failures
+* Based on TypeScript
 
 ---
 
@@ -46,7 +47,7 @@ src/
 git clone https://github.com/your-username/ai-arena.git
 cd ai-arena
 npm install
-npm start
+
 ```
 
 ---
