@@ -1,0 +1,87 @@
+/* Auth Forms Styles */
+.side.auth-form {
+  background: linear-gradient(to left top, #2f2d31 50%,#36393a 80%,#dbd9d4);
+  width: 100%;
+  height: 100%;
+  padding: 20px 30px;
+}
+
+.side.auth-form h2 {
+    color: #ccc;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.side.auth-form form {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.side.auth-form input {
+  margin: 8px 0;
+  background-color: whitesmoke;
+  font-weight: bold;
+  color: #333;
+}
+
+.side.auth-form button {
+  margin-top: 15px;
+  background: #764ba2;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.side.auth-form button:hover {
+  background: #5a3a7a;
+}
+
+.side.auth-form p {
+  margin-top: 15px;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.side.auth-form p:hover {
+  color: white;
+}
+.no-match{
+    border: 2px solid red;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .side.auth-form {
+    padding: 15px 20px;
+  }
+
+  .side.auth-form h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .side.auth-form input {
+    padding: 12px;
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+
+  .side.auth-form button {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .side.auth-form p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 320px) {
+  .side.auth-form {
+    padding: 15px 20px;
+    width: 250px;
+  }
+}
