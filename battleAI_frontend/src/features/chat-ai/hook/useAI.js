@@ -20,7 +20,7 @@ export const useAI=()=>{
       
     }
     catch(err){
-      dispatch(seterror(err.response.data?.message))
+      dispatch(seterror("something went's wrong. please re-send the problem"))
     }
   }
   return {

@@ -118,7 +118,7 @@ body {
 }
 
 .winner-tag {
-  position: absolute;
+  position: fixed;
   bottom: 10px;
   right: 10px;
   color: orange;
@@ -191,6 +191,7 @@ flex-direction: column;
   color: #000;
   padding: 20px;
   border-radius: 15px;
+  width:300px;
 }
 
 .judge-header {

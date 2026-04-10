@@ -3,6 +3,9 @@ import { useAI } from "../hook/useAI";
 
 const SolutionCard = ({ title, score, winner,solution }) => {
   const {loading,error}=useAI()
+  if (error) {
+    return <h1 style={{ color: "red" }}>{error}</h1>;
+  }
   return (
     <div className={`card ${winner ? "winner" : ""}`}>
       <div className="card-top">
@@ -13,9 +16,7 @@ const SolutionCard = ({ title, score, winner,solution }) => {
       {loading ? (<h3>Loading...</h3>) : (<><div className="code">
         {solution}
       </div></>)}
-      
-
-      {winner && <div className="winner-tag">🏆 Winner</div>}
+    
     </div>
   );
 };
